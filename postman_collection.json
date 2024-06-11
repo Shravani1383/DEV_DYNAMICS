@@ -1,0 +1,106 @@
+{
+    "info": {
+      "name": "Inventory Management System",
+      "description": "This collection contains APIs for managing an e-commerce store's inventory, cart, and discount coupons.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Add Item to Inventory",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"productId\": \"123\",\n  \"quantity\": 10\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5000/addItemToInventory",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["addItemToInventory"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Remove Item from Inventory",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"productId\": \"123\",\n  \"quantity\": 5\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5000/removeItemFromInventory",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["removeItemFromInventory"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Add Item to Cart",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"customerId\": \"cust1\",\n  \"productId\": \"123\",\n  \"quantity\": 2\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5000/addItemToCart",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["addItemToCart"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Apply Discount Coupon",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"cartValue\": 1000,\n  \"discountId\": \"DISCOUNT20\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5000/applyDiscountCoupon",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["applyDiscountCoupon"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
