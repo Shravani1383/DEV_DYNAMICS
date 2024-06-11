@@ -33,9 +33,9 @@ This project is an inventory management system for an e-commerce store. It allow
    "customerId": "cust1",
    "productId": "123",
    "quantity": 2
-  }  
+  }
 
- ### 4. Apply Discount Coupon
+### 4. Apply Discount Coupon
 - **Endpoint**: '/applyDiscountCoupon'
 -**Method**: POST
 -**Request Body**:
